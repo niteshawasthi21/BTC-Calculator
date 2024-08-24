@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .container {
-  max-width: 40rem; /* Reduced max width */
+  max-width: 60rem; /* Reduced max width */
   padding: 2rem 3rem; /* Reduced padding */
   border: 2rem solid #eee; /* Reduced border size */
   background-color: #fff;
