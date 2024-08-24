@@ -1,0 +1,17 @@
+/* Add application styles & imports to this file! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 60%; /* Slightly smaller base font size */
+  font-family: Roboto;
+  color: #555;
+  background-color: #fc9d22;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}

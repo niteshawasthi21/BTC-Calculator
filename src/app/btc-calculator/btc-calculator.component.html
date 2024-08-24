@@ -1,0 +1,47 @@
+<div class="container">
+  <div>
+    <div class="header">
+      <img
+        src="https://s2.coinmarketcap.com/static/img/coins/32x32/1.png"
+        alt="Bitcoin"
+        class="header__logo"
+      />
+      <h1 class="header__heading">Bitcoin Calculator</h1>
+    </div>
+    <div class="price">
+      <div class="price__bought">
+        <label class="price__label">BTC/USD when bought</label>
+        <input
+          type="number"
+          class="price__input price__input--bought"
+          placeholder="Price in USD"
+          [(ngModel)]="priceBought"
+        />
+      </div>
+      <div class="price__now">
+        <label class="price__label">BTC/USD today</label>
+        <input
+          type="number"
+          class="price__input price__input--now"
+          placeholder="Price in USD"
+          [(ngModel)]="priceNow"
+        />
+      </div>
+    </div>
+
+    <div class="investment">
+      <label class="investment__text">How many BTC did you buy?</label>
+      <input
+        type="number"
+        class="investment__btc"
+        placeholder="Amount of BTC"
+        [(ngModel)]="btcAmount"
+      />
+      <button class="investment__btn" (click)="calculate()">OK</button>
+    </div>
+
+    <p class="result">
+      {{ resultMessage }}
+    </p>
+  </div>
+</div>
